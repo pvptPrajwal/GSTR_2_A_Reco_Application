@@ -1,7 +1,8 @@
-# GSTR-2A Reconciliation Tool 
+## GSTR-2A Reconciliation Tool 
 ## User Guide & Reference Document 
 
-/ What is this tool? 
+ 
+ What is this tool? 
 This tool automates the GSTR-2A vs Purchase Book reconciliation process. 
 It compares invoices filed by your suppliers on the GST Portal (GSTR-2A) 
 with your internal Purchase Book — and tells you exactly what matches
