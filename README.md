@@ -37,8 +37,8 @@ You select your Excel files, click Run — and get a ready report in seconds.
   	 
 <img width="1056" height="1" alt="image" src="https://github.com/user-attachments/assets/284e6a55-7e30-4ccd-aac6-669cf4bd9efd" />
  
-1.	About the Input Files
-   1.1	GST Portal File (GSTR-2A)
+2.	About the Input Files
+   2.1	GST Portal File (GSTR-2A)
   	  This is the Excel file you download from the GST Portal. It contains invoices that your suppliers have filed in their GSTR-1. 
         •	GST Portal → Return Dashboard → GSTR-2A → Download Excel
   	    •	The file has multiple sheets: B2B, B2BUR, CDNR, CDNUR, IMPG, IMPS, etc.
@@ -54,7 +54,7 @@ You select your Excel files, click Run — and get a ready report in seconds.
     IMPS     — Import of services 
     Any other sheet — auto-detected if it has invoice data
   	 
-  1.2	Purchase Book File 
+  2.2	Purchase Book File 
    This is your internal record of purchase invoices — usually exported from Tally, SAP, or any accounting software. 
      •	Only the first sheet is read. 
      •	Required columns: Invoice Number, GSTIN, Taxable Value, IGST/CGST/SGST.
@@ -69,7 +69,7 @@ You select your Excel files, click Run — and get a ready report in seconds.
      SGST           : 'SGST', 'SGST Paid', 'SGST/UT Paid', 'State Tax' 
      Vendor Name    : 'Party Name', 'Supplier Name', 'Trade Name' 
 
-2.	Output Report — Sheet by Sheet
+3.	Output Report — Sheet by Sheet
    The output file is named Final_Reco_Report.xlsx and contains these sheets:
   	<img width="1056" height="1" alt="image" src="https://github.com/user-attachments/assets/b4605879-5d42-435c-ae82-c4758ad91dd9" />
 
@@ -78,7 +78,7 @@ You select your Excel files, click Run — and get a ready report in seconds.
 
 <img width="1056" height="1" alt="image" src="https://github.com/user-attachments/assets/6f3b41a8-abab-4ce4-a422-3149f49a86a7" />
 
-1.	How the Tool Works (Simple Explanation)
+4.	How the Tool Works (Simple Explanation)
    1.3	Reading Files
   	•	All GST Portal files are stacked together into one list.
   	•	All Purchase Book files are stacked together into one list.
@@ -110,7 +110,7 @@ You select your Excel files, click Run — and get a ready report in seconds.
    <img width="1056" height="1" alt="image" src="https://github.com/user-attachments/assets/562579b9-292c-4073-8516-c09856927cbf" />
 <img width="1056" height="1" alt="image" src="https://github.com/user-attachments/assets/e9ac241b-2631-4998-9e88-4bb4436281f2" />
 
-1.	Output Column Reference
+5.	Output Column Reference
    Standard Columns (all sheets)
   	<img width="737" height="329" alt="image" src="https://github.com/user-attachments/assets/5ad372ca-01b1-4398-8206-5f9cdeff8254" />
    Mismatched Sheet Extra Columns
@@ -130,7 +130,7 @@ You select your Excel files, click Run — and get a ready report in seconds.
   	•	— Difference (PB minus GST). Red = gap exists. 
 <img width="1056" height="1" alt="image" src="https://github.com/user-attachments/assets/dd4d97d4-98ba-4464-b144-26c4791508ac" />
       
-1.	Common Questions 
+6.	Common Questions 
   Q: Why does the same invoice appear in both Missing sheets? 
   This means the supplier has filed SOME invoices but not ALL. For example — they filed INV001 and INV002 on the portal, but INV003 and INV004 are missing. Meanwhile your Purchase Book has INV003 and INV004 but not INV001. This is shown in the Cross_Match sheet. 
  
